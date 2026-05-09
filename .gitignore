@@ -1,0 +1,17 @@
+venv/
+
+*.xlsx
+
+__pycache__/
+
+*.png
+
+tasks/
+
+*.pyc
+
+*.pptx
+
+archive/
+
+SOAL-HACKATHON.md
