@@ -24,30 +24,48 @@ Actual image output: 100%
 
 ## What Is Included
 
-This public repo is intentionally small.
+This public repo keeps the final submission history compact, but it now also
+includes the competition prompt, preview dataset, selected preparation notes,
+and final chart outputs that are allowed to be shared publicly.
 
 ```text
 answers/
   1/ ... 31/        Numbered Python submission attempts.
   29/               Final accepted variant.
 
+archive/
+  hackathon_playbook.md
+  pre-start/
+    analysis/       Dataset analysis notes and reproduction script.
+    briefing/       Briefing summary used to plan the run.
+    dataset/        Preview dataset released before the task.
+  root-run-output/  Final published chart outputs.
+  submission-prep/  Submission planning summary.
+
+tasks/
+  snippet_code_matplotlib.py
+  rising_star_*_incomplete.png
+  data_penjualan.xlsx
+  retail_insight_example.xlsx
+
+SOAL-HACKATHON.md   Public markdown copy of the official task statement.
 requirements.txt    Local Python package versions used for the run.
 README.md           This project note.
 ```
 
-The answer folders keep only the Python scripts in version control. Generated
-Excel files, generated images, task packages, datasets, local archives, and
-virtual environments are ignored.
+The answer folders still keep only the Python scripts. The newly published
+supporting files are the minimum set that makes the repo readable as both a
+competition record and a technical post.
 
-## What Is Not Included Yet
+## Publication Status
 
-The official task package, datasets, briefing files, screenshots, generated
-workbooks, and generated charts are not published here for now.
+Redistribution of the materials listed above is now confirmed, so they are
+tracked in this repository.
 
-Those files are kept out of git until I am sure they are allowed to be
-redistributed. The scripts remain useful as a record of the implementation and
-debugging process, but they may need the original competition data to run
-unchanged.
+I still leave raw attachment bundles, duplicate source formats, screenshots,
+meeting transcript files, generated workbooks, loose drafts, caches, and local
+virtual environments out of git. That keeps the public repo focused on the
+task, data, code, analysis process, and final result artifacts.
 
 ## Final Submission
 
@@ -105,7 +123,11 @@ The original working environment used a local `venv/`, which is ignored in git.
 
 ## Running
 
-If the required competition dataset is available in the expected location:
+The repo now includes the preview dataset at
+`archive/pre-start/dataset/Transaksi.csv`. The accepted script still expects a
+competition-style input file to be available in a location it can discover.
+
+If the required dataset is available in the expected location:
 
 ```powershell
 cd answers\29
@@ -118,5 +140,7 @@ generated artifacts.
 
 ## Notes
 
-This repository is mainly a code and process record. I may add the task package,
-sample data, or fuller write-up later if redistribution is confirmed.
+This repository is now a compact public record of the competition run: the
+submission trail, the final accepted answer, the public task statement, the
+published input datasets, and the selected notes that explain how the solution
+was developed.

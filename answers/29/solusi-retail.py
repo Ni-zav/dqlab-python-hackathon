@@ -34,6 +34,7 @@ def find_input_file() -> Path:
         "data_penjualan.xlsx",
         "data_penjualan.xls",
         "data_penjualan.csv",
+        "Transaksi.csv",
     ]
     dirs = [
         Path("."),
@@ -41,6 +42,14 @@ def find_input_file() -> Path:
         Path("../tasks"),
         Path("../../tasks"),
         Path("../../../tasks"),
+        Path("archive/pre-start/dataset"),
+        Path("../archive/pre-start/dataset"),
+        Path("../../archive/pre-start/dataset"),
+        Path("../../../archive/pre-start/dataset"),
+        Path("archive/pre-start/dataset/original-format"),
+        Path("../archive/pre-start/dataset/original-format"),
+        Path("../../archive/pre-start/dataset/original-format"),
+        Path("../../../archive/pre-start/dataset/original-format"),
     ]
 
     for name in official_names + local_names:

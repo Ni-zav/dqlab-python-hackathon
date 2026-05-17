@@ -6,12 +6,58 @@ __pycache__/
 
 *.png
 
-tasks/
-
 *.pyc
 
 *.pptx
 
-archive/
+# Public task statement.
+!SOAL-HACKATHON.md
 
-SOAL-HACKATHON.md
+# Publish only the official helper snippet and reference images from the task.
+tasks/*
+!tasks/snippet_code_matplotlib.py
+!tasks/rising_star_actual_incomplete.png
+!tasks/rising_star_index_incomplete.png
+!tasks/data_penjualan.xlsx
+!tasks/retail_insight_example.xlsx
+
+# Keep the archive private by default and publish only the pieces that support
+# a public technical write-up and reproducible analysis.
+archive/*
+!archive/hackathon_playbook.md
+!archive/pre-start/
+!archive/root-run-output/
+!archive/submission-prep/
+
+archive/pre-start/*
+!archive/pre-start/analysis/
+!archive/pre-start/briefing/
+!archive/pre-start/dataset/
+
+archive/pre-start/analysis/*
+!archive/pre-start/analysis/analyze_transaksi_dataset.py
+!archive/pre-start/analysis/dataset_deep_dive.md
+!archive/pre-start/analysis/hackathon_submission_template.py
+
+archive/pre-start/briefing/*
+!archive/pre-start/briefing/reports/
+
+archive/pre-start/briefing/reports/*
+!archive/pre-start/briefing/reports/2026-05-09/
+
+archive/pre-start/briefing/reports/2026-05-09/*
+!archive/pre-start/briefing/reports/2026-05-09/hackathon-briefing.md
+
+archive/pre-start/dataset/*
+!archive/pre-start/dataset/Transaksi.csv
+!archive/pre-start/dataset/original-format/
+
+archive/pre-start/dataset/original-format/*
+!archive/pre-start/dataset/original-format/data_penjualan.xlsx
+
+archive/root-run-output/*
+!archive/root-run-output/rising_star_actual.png
+!archive/root-run-output/rising_star_index.png
+
+archive/submission-prep/*
+!archive/submission-prep/summary.md
